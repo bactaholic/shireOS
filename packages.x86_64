@@ -130,6 +130,8 @@ xl2tpd
 zsh
 
 #shireOS
+greetd
+greetd-tuigreet
 bash-completion
 cmatrix
 code
