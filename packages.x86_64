@@ -145,7 +145,6 @@ gnome-system-monitor
 grub
 hyprland
 hyprlock
-hyprshot
 jp2a
 kitty
 lib32-opencl-nvidia
@@ -164,7 +163,7 @@ otf-font-awesome
 pavucontrol
 pipewire-pulse
 polkit-kde-agent
-python-pywal16
+python-pywal
 qemu-base
 remmina
 rofi-wayland
@@ -174,8 +173,5 @@ swww
 thunar
 tree
 ttf-font-awesome
-ttf-tengwar-annatar
 unzip
-vesktop
 waybar
-waypaper
