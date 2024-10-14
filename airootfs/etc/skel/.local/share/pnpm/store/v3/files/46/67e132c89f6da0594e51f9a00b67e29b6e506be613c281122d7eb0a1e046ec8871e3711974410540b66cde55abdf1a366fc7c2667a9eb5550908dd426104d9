@@ -1,0 +1,22 @@
+/// <reference types="react" />
+import { Response } from "../reviewDbApi";
+interface UserProps {
+    discordId: string;
+    name: string;
+}
+interface Props extends UserProps {
+    onFetchReviews(data: Response): void;
+    refetchSignal?: unknown;
+    showInput?: boolean;
+    page?: number;
+    scrollToTop?(): void;
+    hideOwnReview?: boolean;
+}
+export default function ReviewsView({ discordId, name, onFetchReviews, refetchSignal, scrollToTop, page, showInput, hideOwnReview, }: Props): JSX.Element | null;
+export declare function ReviewsInputComponent({ discordId, isAuthor, refetch, name }: {
+    discordId: string;
+    name: string;
+    isAuthor: boolean;
+    refetch(): void;
+}): JSX.Element;
+export {};

@@ -1,0 +1,8 @@
+/// <reference types="react" />
+export declare const enum ServerListRenderPosition {
+    Above = 0,
+    In = 1
+}
+export declare function addServerListElement(position: ServerListRenderPosition, renderFunction: Function): void;
+export declare function removeServerListElement(position: ServerListRenderPosition, renderFunction: Function): void;
+export declare const renderAll: (position: ServerListRenderPosition) => JSX.Element[];

@@ -1,0 +1,191 @@
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+/// <reference types="lodash" />
+import { relaunch } from "../../utils/native";
+import { canonicalizeMatch, canonicalizeReplace, canonicalizeReplacement } from "../../utils/patches";
+import * as Webpack from "../../webpack/webpack";
+import type { ComponentType } from "react";
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    getShortcuts(): {
+        wp: typeof import("../../webpack");
+        wpc: {
+            [id: number]: {
+                id: string | number;
+                loaded: boolean;
+                exports: any;
+            };
+        };
+        wreq: import("discord-types/other").WebpackInstance;
+        wpsearch: typeof Webpack.search;
+        wpex: typeof Webpack.extract;
+        wpexs: (code: string) => Function | null;
+        find: (...filterProps: unknown[]) => any;
+        findAll: typeof Webpack.findAll;
+        findByProps: (...filterProps: unknown[]) => any;
+        findAllByProps: (...props: string[]) => any[];
+        findByCode: (...filterProps: unknown[]) => any;
+        findAllByCode: (code: string) => any[];
+        findComponentByCode: (...filterProps: unknown[]) => any;
+        findAllComponentsByCode: (...code: string[]) => any[];
+        findExportedComponent: (...props: string[]) => any;
+        findStore: (...filterProps: unknown[]) => any;
+        PluginsApi: typeof import("..");
+        plugins: Record<string, import("../../utils/types").Plugin>;
+        Settings: import("../../Vencord").Settings;
+        Api: typeof import("../../api");
+        reload: () => void;
+        restart: typeof relaunch;
+        canonicalizeMatch: typeof canonicalizeMatch;
+        canonicalizeReplace: typeof canonicalizeReplace;
+        canonicalizeReplacement: typeof canonicalizeReplacement;
+        fakeRender: (component: ComponentType, props: any) => void;
+        ComponentTypes: typeof import("../../webpack/common/types/components");
+        MenuTypes: typeof import("../../webpack/common/types/menu");
+        UtilTypes: typeof import("../../webpack/common/types/utils");
+        ModalImageClasses: import("../../webpack/common/types").ImageModalClasses;
+        ButtonWrapperClasses: import("../../webpack/common/types").ButtonWrapperClasses;
+        Forms: {
+            FormTitle: import("../../webpack/common/types").FormTitle;
+            FormSection: import("../../webpack/common/types").FormSection;
+            FormDivider: import("../../webpack/common/types").FormDivider;
+            FormText: import("../../webpack/common/types").FormText;
+        };
+        Card: import("../../webpack/common/types").Card;
+        Button: import("../../webpack/common/types").Button;
+        Switch: import("../../webpack/common/types").Switch;
+        Tooltip: import("../../webpack/common/types").Tooltip;
+        TextInput: import("../../webpack/common/types").TextInput;
+        TextArea: import("../../webpack/common/types").TextArea;
+        Text: import("../../webpack/common/types").Text;
+        Heading: import("../../webpack/common/types").Heading;
+        Select: import("../../webpack/common/types").Select;
+        SearchableSelect: import("../../webpack/common/types").SearchableSelect;
+        Slider: import("../../webpack/common/types").Slider;
+        ButtonLooks: import("../../webpack/common/types").ButtonLooks;
+        Popout: import("../../webpack/common/types").Popout;
+        Dialog: import("../../webpack/common/types").Dialog;
+        TabBar: any;
+        Paginator: import("../../webpack/common/types").Paginator;
+        ScrollerThin: import("../../webpack/common/types").ScrollerThin;
+        Clickable: import("../../webpack/common/types").Clickable;
+        Avatar: import("../../webpack/common/types").Avatar;
+        FocusLock: import("../../webpack/common/types").FocusLock;
+        useToken: import("../../webpack/common/types").useToken;
+        MaskedLink: import("../../webpack/common/types").MaskedLink;
+        Timestamp: import("../../webpack/common/types").Timestamp;
+        Flex: import("../../webpack/common/types").Flex;
+        OAuth2AuthorizeModal: any;
+        Menu: import("../../webpack/common/types").Menu;
+        ContextMenuApi: import("../../webpack/common/types").ContextMenuApi;
+        React: typeof import("react");
+        useState: typeof import("react").useState;
+        useEffect: typeof import("react").useEffect;
+        useMemo: typeof import("react").useMemo;
+        useRef: typeof import("react").useRef;
+        useReducer: typeof import("react").useReducer;
+        useCallback: typeof import("react").useCallback;
+        ReactDOM: typeof import("react-dom") & typeof import("react-dom/client");
+        TextAndImagesSettingsStores: Record<string, import("../../webpack/common/types").SettingsStore<any>>;
+        StatusSettingsStores: Record<string, import("../../webpack/common/types").SettingsStore<any>>;
+        UserSettingsActionCreators: any;
+        Flux: import("../../webpack/common/types").Flux;
+        DraftType: typeof import("../../webpack/common/types").DraftType;
+        MessageStore: Omit<import("discord-types/stores").MessageStore, "getMessages"> & {
+            getMessages(chanId: string): any;
+        };
+        PrivateChannelsStore: any;
+        PermissionStore: import("../../webpack/common").GenericStore;
+        GuildChannelStore: import("../../webpack/common").GenericStore;
+        ReadStateStore: import("../../webpack/common").GenericStore;
+        PresenceStore: import("../../webpack/common").GenericStore;
+        GuildStore: import("../../webpack/common/types").GuildStore;
+        UserStore: import("discord-types/stores").UserStore & import("../../webpack/common/types").FluxStore;
+        UserProfileStore: import("../../webpack/common").GenericStore;
+        SelectedChannelStore: import("discord-types/stores").SelectedChannelStore & import("../../webpack/common/types").FluxStore;
+        SelectedGuildStore: import("../../webpack/common/types").FluxStore & Record<string, any>;
+        ChannelStore: import("discord-types/stores").ChannelStore & import("../../webpack/common/types").FluxStore;
+        GuildMemberStore: import("discord-types/stores").GuildMemberStore & import("../../webpack/common/types").FluxStore;
+        RelationshipStore: import("discord-types/stores").RelationshipStore & import("../../webpack/common/types").FluxStore & {
+            getSince(userId: string): string;
+        };
+        EmojiStore: import("../../webpack/common/types").EmojiStore;
+        WindowStore: import("../../webpack/common/types").WindowStore;
+        DraftStore: import("../../webpack/common/types").DraftStore;
+        useStateFromStores: import("../../webpack/common/types").useStateFromStores;
+        showToast(message: string, type?: number): void;
+        FluxDispatcher: import("../../webpack/common/types").FluxDispatcher;
+        ComponentDispatch: any;
+        Constants: any;
+        RestAPI: import("../../webpack/common/types").RestAPI;
+        moment: typeof import("moment");
+        hljs: HLJSApi;
+        lodash: import("lodash").LoDashStatic;
+        i18n: import("../../webpack/common/types").i18n;
+        SnowflakeUtils: import("../../webpack/common/types").SnowflakeUtils;
+        Parser: import("../../webpack/common/types").Parser;
+        Alerts: import("../../webpack/common/types").Alerts;
+        Toasts: {
+            show(data: {
+                message: string;
+                id: string;
+                type: number;
+                options?: {
+                    position?: number | undefined;
+                    component?: import("react").ReactNode;
+                    duration?: number | undefined;
+                } | undefined;
+            }): void;
+            pop(): void;
+            Type: {
+                MESSAGE: number;
+                SUCCESS: number;
+                FAILURE: number;
+                CUSTOM: number;
+            };
+            Position: {
+                TOP: number;
+                BOTTOM: number;
+            };
+            genId: () => string;
+        };
+        UserUtils: {
+            getUser: (id: string) => Promise<import("discord-types/general").User>;
+        };
+        UploadManager: any;
+        UploadHandler: {
+            promptToUpload: (files: File[], channel: import("discord-types/general").Channel, draftType: Number) => void;
+        };
+        ApplicationAssetUtils: {
+            fetchAssetIds: (applicationId: string, e: string[]) => Promise<string[]>;
+        };
+        Clipboard: import("../../webpack/common/types").Clipboard;
+        NavigationRouter: import("../../webpack/common/types").NavigationRouter;
+        SettingsRouter: any;
+        PermissionsBits: import("../../webpack/common/types").PermissionsBits;
+        zustandCreate: any;
+        zustandPersist: any;
+        MessageActions: any;
+        UserProfileActions: any;
+        InviteActions: any;
+        IconUtils: import("../../webpack/common/types").IconUtils;
+    };
+    start(): void;
+    stop(): void;
+} & Record<string, any>;
+export default _default;

@@ -1,0 +1,158 @@
+import type { ComponentType, PropsWithChildren, ReactNode, Ref } from "react";
+export declare const enum ModalSize {
+    SMALL = "small",
+    MEDIUM = "medium",
+    LARGE = "large",
+    DYNAMIC = "dynamic"
+}
+declare const enum ModalTransitionState {
+    ENTERING = 0,
+    ENTERED = 1,
+    EXITING = 2,
+    EXITED = 3,
+    HIDDEN = 4
+}
+export interface ModalProps {
+    transitionState: ModalTransitionState;
+    onClose(): Promise<void>;
+}
+export interface ModalOptions {
+    modalKey?: string;
+    onCloseRequest?: (() => void);
+    onCloseCallback?: (() => void);
+}
+type RenderFunction = (props: ModalProps) => ReactNode;
+export declare const Modals: {
+    ModalRoot: ComponentType<PropsWithChildren<{
+        transitionState: ModalTransitionState;
+        size?: ModalSize;
+        role?: "alertdialog" | "dialog";
+        className?: string;
+        fullscreenOnMobile?: boolean;
+        "aria-label"?: string;
+        "aria-labelledby"?: string;
+        onAnimationEnd?(): string;
+    }>>;
+    ModalHeader: ComponentType<PropsWithChildren<{
+        /** Flex.Justify.START */
+        justify?: string;
+        /** Flex.Direction.HORIZONTAL */
+        direction?: string;
+        /** Flex.Align.CENTER */
+        align?: string;
+        /** Flex.Wrap.NO_WRAP */
+        wrap?: string;
+        separator?: boolean;
+        className?: string;
+    }>>;
+    /** This also accepts Scroller props but good luck with that */
+    ModalContent: ComponentType<PropsWithChildren<{
+        className?: string;
+        scrollerRef?: Ref<HTMLElement>;
+        [prop: string]: any;
+    }>>;
+    ModalFooter: ComponentType<PropsWithChildren<{
+        /** Flex.Justify.START */
+        justify?: string;
+        /** Flex.Direction.HORIZONTAL_REVERSE */
+        direction?: string;
+        /** Flex.Align.STRETCH */
+        align?: string;
+        /** Flex.Wrap.NO_WRAP */
+        wrap?: string;
+        separator?: boolean;
+        className?: string;
+    }>>;
+    ModalCloseButton: ComponentType<{
+        focusProps?: any;
+        onClick(): void;
+        withCircleBackground?: boolean;
+        hideOnFullscreen?: boolean;
+        className?: string;
+    }>;
+};
+export type ImageModal = ComponentType<{
+    className?: string;
+    src: string;
+    placeholder: string;
+    original: string;
+    width?: number;
+    height?: number;
+    animated?: boolean;
+    responsive?: boolean;
+    renderLinkComponent(props: any): ReactNode;
+    maxWidth?: number;
+    maxHeight?: number;
+    shouldAnimate?: boolean;
+    onClose?(): void;
+    shouldHideMediaOptions?: boolean;
+}>;
+export declare const ImageModal: ImageModal;
+export declare const ModalRoot: ComponentType<PropsWithChildren<{
+    transitionState: ModalTransitionState;
+    size?: ModalSize | undefined;
+    role?: "dialog" | "alertdialog" | undefined;
+    className?: string | undefined;
+    fullscreenOnMobile?: boolean | undefined;
+    "aria-label"?: string | undefined;
+    "aria-labelledby"?: string | undefined;
+    onAnimationEnd?(): string;
+}>>;
+export declare const ModalHeader: ComponentType<PropsWithChildren<{
+    /** Flex.Justify.START */
+    justify?: string | undefined;
+    /** Flex.Direction.HORIZONTAL */
+    direction?: string | undefined;
+    /** Flex.Align.CENTER */
+    align?: string | undefined;
+    /** Flex.Wrap.NO_WRAP */
+    wrap?: string | undefined;
+    separator?: boolean | undefined;
+    className?: string | undefined;
+}>>;
+export declare const ModalContent: ComponentType<PropsWithChildren<{
+    [prop: string]: any;
+    className?: string | undefined;
+    scrollerRef?: Ref<HTMLElement> | undefined;
+}>>;
+export declare const ModalFooter: ComponentType<PropsWithChildren<{
+    /** Flex.Justify.START */
+    justify?: string | undefined;
+    /** Flex.Direction.HORIZONTAL_REVERSE */
+    direction?: string | undefined;
+    /** Flex.Align.STRETCH */
+    align?: string | undefined;
+    /** Flex.Wrap.NO_WRAP */
+    wrap?: string | undefined;
+    separator?: boolean | undefined;
+    className?: string | undefined;
+}>>;
+export declare const ModalCloseButton: ComponentType<{
+    focusProps?: any;
+    onClick(): void;
+    withCircleBackground?: boolean | undefined;
+    hideOnFullscreen?: boolean | undefined;
+    className?: string | undefined;
+}>;
+/**
+ * Wait for the render promise to resolve, then open a modal with it.
+ * This is equivalent to render().then(openModal)
+ * You should use the Modal components exported by this file
+ */
+export declare function openModalLazy(render: () => Promise<RenderFunction>, options?: ModalOptions & {
+    contextKey?: string;
+}): Promise<string>;
+/**
+ * Open a Modal with the given render function.
+ * You should use the Modal components exported by this file
+ */
+export declare function openModal(render: RenderFunction, options?: ModalOptions, contextKey?: string): string;
+/**
+ * Close a modal by its key
+ */
+export declare function closeModal(modalKey: string, contextKey?: string): void;
+/**
+ * Close all open modals
+ */
+export declare function closeAllModals(): void;
+export {};

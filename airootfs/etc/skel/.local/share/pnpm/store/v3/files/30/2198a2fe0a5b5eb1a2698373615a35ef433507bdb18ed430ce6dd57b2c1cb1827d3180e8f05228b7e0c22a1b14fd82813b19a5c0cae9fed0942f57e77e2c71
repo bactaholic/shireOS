@@ -1,0 +1,37 @@
+/// <reference types="react" />
+import "./fixBadgeOverflow.css";
+import { BadgePosition, BadgeUserArgs, ProfileBadge } from "../../../api/Badges";
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    required: true;
+    patches: {
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        }[];
+    }[];
+    toolboxActions: {
+        "Refetch Badges"(): Promise<void>;
+    };
+    start(): Promise<void>;
+    renderBadgeComponent: import("react").FunctionComponent<ProfileBadge & BadgeUserArgs>;
+    getDonorBadges(userId: string): {
+        image: string;
+        description: string;
+        position: BadgePosition;
+        props: {
+            style: {
+                borderRadius: string;
+                transform: string;
+            };
+        };
+        onClick(): void;
+    }[];
+} & Record<string, any>;
+export default _default;

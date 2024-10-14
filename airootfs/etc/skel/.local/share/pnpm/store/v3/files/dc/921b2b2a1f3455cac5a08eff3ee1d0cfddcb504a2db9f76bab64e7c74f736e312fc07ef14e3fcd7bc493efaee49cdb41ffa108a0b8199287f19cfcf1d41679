@@ -1,0 +1,29 @@
+export interface Category {
+    id: string;
+    name: string;
+    color: number;
+    channels: string[];
+    collapsed?: boolean;
+}
+export declare let categories: Category[];
+export declare function saveCats(cats: Category[]): Promise<void>;
+export declare function init(): Promise<void>;
+export declare function initCategories(userId: string): Promise<void>;
+export declare function getCategory(id: string): Category | undefined;
+export declare function createCategory(category: Category): Promise<void>;
+export declare function updateCategory(category: Category): Promise<void>;
+export declare function addChannelToCategory(channelId: string, categoryId: string): Promise<void>;
+export declare function removeChannelFromCategory(channelId: string): Promise<void>;
+export declare function removeCategory(categoryId: string): Promise<void>;
+export declare function collapseCategory(id: string, value?: boolean): Promise<void>;
+export declare function isPinned(id: string): boolean;
+export declare function categoryLen(): number;
+export declare function getAllUncollapsedChannels(): string[];
+export declare function getSections(): number[];
+export declare const canMoveArrayInDirection: (array: any[], index: number, direction: -1 | 1) => any;
+export declare const canMoveCategoryInDirection: (id: string, direction: -1 | 1) => any;
+export declare const canMoveCategory: (id: string) => any;
+export declare const canMoveChannelInDirection: (channelId: string, direction: -1 | 1) => any;
+export declare function moveCategory(id: string, direction: -1 | 1): Promise<void>;
+export declare function moveChannel(channelId: string, direction: -1 | 1): Promise<void>;
+export declare function migrateData(userId: string): Promise<void>;

@@ -1,0 +1,37 @@
+import { OptionType } from "../../utils/types";
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    settings: import("../../utils/types").DefinedSettings<{
+        replaceEvents: {
+            description: string;
+            type: OptionType.BOOLEAN;
+            default: true;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        replaceEvents: {
+            description: string;
+            type: OptionType.BOOLEAN;
+            default: true;
+        };
+    }>, {}>;
+    patches: {
+        find: string;
+        replacement: ({
+            match: RegExp;
+            replace: string;
+            predicate?: undefined;
+        } | {
+            match: RegExp;
+            replace: string;
+            predicate: () => boolean;
+        })[];
+    }[];
+    xor(quote: string): string;
+    readonly quote: any;
+} & Record<string, any>;
+export default _default;

@@ -1,0 +1,68 @@
+/// <reference types="highlight.js" />
+import type { Channel, User } from "discord-types/general";
+import type * as t from "./types/utils";
+export declare let FluxDispatcher: t.FluxDispatcher;
+export declare let ComponentDispatch: any;
+export declare const Constants: any;
+export declare const RestAPI: t.RestAPI;
+export declare const moment: typeof import("moment");
+export declare const hljs: typeof import("highlight.js");
+export declare const lodash: typeof import("lodash");
+export declare const i18n: t.i18n;
+export declare let SnowflakeUtils: t.SnowflakeUtils;
+export declare let Parser: t.Parser;
+export declare let Alerts: t.Alerts;
+export declare const Toasts: {
+    show(data: {
+        message: string;
+        id: string;
+        /**
+         * Toasts.Type
+         */
+        type: number;
+        options?: {
+            /**
+             * Toasts.Position
+             */
+            position?: number;
+            component?: React.ReactNode;
+            duration?: number;
+        };
+    }): void;
+    pop(): void;
+    Type: {
+        MESSAGE: number;
+        SUCCESS: number;
+        FAILURE: number;
+        CUSTOM: number;
+    };
+    Position: {
+        TOP: number;
+        BOTTOM: number;
+    };
+    genId: () => string;
+};
+/**
+ * Show a simple toast. If you need more options, use Toasts.show manually
+ */
+export declare function showToast(message: string, type?: number): void;
+export declare const UserUtils: {
+    getUser: (id: string) => Promise<User>;
+};
+export declare const UploadManager: any;
+export declare const UploadHandler: {
+    promptToUpload: (files: File[], channel: Channel, draftType: Number) => void;
+};
+export declare const ApplicationAssetUtils: {
+    fetchAssetIds: (applicationId: string, e: string[]) => Promise<string[]>;
+};
+export declare const Clipboard: t.Clipboard;
+export declare const NavigationRouter: t.NavigationRouter;
+export declare let SettingsRouter: any;
+export declare const PermissionsBits: t.PermissionsBits;
+export declare const zustandCreate: any;
+export declare const zustandPersist: any;
+export declare const MessageActions: any;
+export declare const UserProfileActions: any;
+export declare const InviteActions: any;
+export declare const IconUtils: t.IconUtils;

@@ -1,0 +1,26 @@
+import { ApplicationCommandInputType } from "../../api/Commands";
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    dependencies: string[];
+    commands: ({
+        name: string;
+        description: string;
+        options: import("../../api/Commands").Option[];
+        inputType: ApplicationCommandInputType.BOT;
+        execute: (opts: import("../../api/Commands").Argument[], ctx: import("../../api/Commands").CommandContext) => void;
+    } | {
+        name: string;
+        description: string;
+        options: import("../../api/Commands").Option[];
+        execute: (opts: import("../../api/Commands").Argument[]) => {
+            content: string;
+        };
+        inputType?: undefined;
+    })[];
+} & Record<string, any>;
+export default _default;

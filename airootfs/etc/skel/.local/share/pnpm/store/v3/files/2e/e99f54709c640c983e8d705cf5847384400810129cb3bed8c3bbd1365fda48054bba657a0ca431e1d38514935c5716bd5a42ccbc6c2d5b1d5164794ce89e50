@@ -1,0 +1,72 @@
+/// <reference types="react" />
+import { OptionType } from "../../utils/types";
+import { User } from "discord-types/general";
+export declare function buildSeveralUsers({ a, b, count }: {
+    a: string;
+    b: string;
+    count: number;
+}): (string | JSX.Element)[];
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    patches: ({
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        };
+        predicate?: undefined;
+    } | {
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: (_: string, users: string, a: string, b: string) => string;
+        };
+        predicate: () => boolean;
+    })[];
+    settings: import("../../utils/types").DefinedSettings<{
+        showAvatars: {
+            type: OptionType.BOOLEAN;
+            default: true;
+            description: string;
+        };
+        showRoleColors: {
+            type: OptionType.BOOLEAN;
+            default: true;
+            description: string;
+        };
+        alternativeFormatting: {
+            type: OptionType.BOOLEAN;
+            default: true;
+            description: string;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        showAvatars: {
+            type: OptionType.BOOLEAN;
+            default: true;
+            description: string;
+        };
+        showRoleColors: {
+            type: OptionType.BOOLEAN;
+            default: true;
+            description: string;
+        };
+        alternativeFormatting: {
+            type: OptionType.BOOLEAN;
+            default: true;
+            description: string;
+        };
+    }>, {}>;
+    TYPING_TEXT_STYLE: {
+        display: string;
+        gridAutoFlow: string;
+        gridGap: string;
+    };
+    buildSeveralUsers: typeof buildSeveralUsers;
+    mutateChildren(props: any, users: User[], children: any): any;
+} & Record<string, any>;
+export default _default;

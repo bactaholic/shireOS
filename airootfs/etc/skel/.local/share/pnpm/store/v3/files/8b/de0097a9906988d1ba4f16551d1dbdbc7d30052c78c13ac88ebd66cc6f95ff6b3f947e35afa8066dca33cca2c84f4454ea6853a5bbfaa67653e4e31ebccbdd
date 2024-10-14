@@ -1,0 +1,36 @@
+import "./iconStyles.css";
+import type { SVGProps } from "react";
+interface IconProps extends SVGProps<SVGSVGElement> {
+    className?: string;
+    height?: string | number;
+    width?: string | number;
+}
+/**
+ * Discord's link icon, as seen in the Message context menu "Copy Message Link" option
+ */
+export declare function LinkIcon({ height, width, className }: IconProps): JSX.Element;
+/**
+ * Discord's copy icon, as seen in the user popout right of the username when clicking
+ * your own username in the bottom left user panel
+ */
+export declare function CopyIcon(props: IconProps): JSX.Element;
+/**
+ * Discord's open external icon, as seen in the user profile connections
+ */
+export declare function OpenExternalIcon(props: IconProps): JSX.Element;
+export declare function ImageIcon(props: IconProps): JSX.Element;
+export declare function InfoIcon(props: IconProps): JSX.Element;
+export declare function OwnerCrownIcon(props: IconProps): JSX.Element;
+/**
+ * Discord's screenshare icon, as seen in the connection panel
+ */
+export declare function ScreenshareIcon(props: IconProps): JSX.Element;
+export declare function ImageVisible(props: IconProps): JSX.Element;
+export declare function ImageInvisible(props: IconProps): JSX.Element;
+export declare function Microphone(props: IconProps): JSX.Element;
+export declare function CogWheel(props: IconProps): JSX.Element;
+export declare function ReplyIcon(props: IconProps): JSX.Element;
+export declare function DeleteIcon(props: IconProps): JSX.Element;
+export declare function PlusIcon(props: IconProps): JSX.Element;
+export declare function NoEntrySignIcon(props: IconProps): JSX.Element;
+export {};

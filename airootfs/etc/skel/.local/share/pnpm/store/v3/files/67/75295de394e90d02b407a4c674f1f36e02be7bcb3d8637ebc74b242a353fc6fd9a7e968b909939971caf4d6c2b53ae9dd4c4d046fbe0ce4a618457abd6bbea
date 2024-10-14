@@ -1,0 +1,8 @@
+/// <reference types="react" />
+import type { Guild, GuildMember } from "discord-types/general";
+declare const _default: import("react").FunctionComponent<{
+    guild: Guild;
+    guildMember: GuildMember;
+    showBorder: boolean;
+}>;
+export default _default;

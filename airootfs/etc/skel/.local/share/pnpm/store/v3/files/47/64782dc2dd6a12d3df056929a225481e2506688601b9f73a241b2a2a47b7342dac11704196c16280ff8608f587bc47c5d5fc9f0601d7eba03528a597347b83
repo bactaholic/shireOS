@@ -1,0 +1,75 @@
+import { OptionType } from "../../utils/types";
+import type { MouseEvent } from "react";
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    settings: import("../../utils/types").DefinedSettings<{
+        spotify: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        steam: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        epic: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        tidal: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        spotify: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        steam: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        epic: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        tidal: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+    }>, {}>;
+    patches: ({
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        };
+        predicate?: undefined;
+    } | {
+        find: string;
+        predicate: () => boolean;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        };
+    })[];
+    handleLink(data: {
+        href: string;
+    }, event?: MouseEvent): Promise<boolean>;
+    handleAccountView(event: {
+        preventDefault(): void;
+    }, platformType: string, userId: string): void;
+} & Record<string, any>;
+export default _default;

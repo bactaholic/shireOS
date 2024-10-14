@@ -1,0 +1,8 @@
+/// <reference types="react" />
+import { ChatBarButton } from "../../api/ChatButtons";
+export declare function TranslateIcon({ height, width, className }: {
+    height?: number;
+    width?: number;
+    className?: string;
+}): JSX.Element;
+export declare const TranslateChatBarIcon: ChatBarButton;

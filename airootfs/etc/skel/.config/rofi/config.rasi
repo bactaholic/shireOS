@@ -1,0 +1,4 @@
+/* Dark theme. */
+//@theme "/usr/share/rofi/themes/Adapta-Nokto.rasi"
+
+@theme "/home/admin/.local/share/rofi/themes/rounded-green-dark.rasi"

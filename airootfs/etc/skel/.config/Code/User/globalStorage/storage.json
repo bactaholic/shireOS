@@ -1,0 +1,63 @@
+{
+    "userDataProfilesMigration": true,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/admin/.config/hypr": "__default__profile__",
+            "file:///home/admin/.config": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1728700815423": "__default__profile__"
+        }
+    },
+    "profileAssociationsMigration": true,
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "150866929af2057bfd251828a2d331661f72e95797efb02296749a5be6e79c78",
+    "telemetry.devDeviceId": "0165a59f-06d0-4c02-945b-79a2c6dd398c",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": [
+            {
+                "backupFolder": "1728700815423"
+            }
+        ]
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "activityBarBackground": "#181818",
+            "sideBarBackground": "#181818",
+            "statusBarBackground": "#181818",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 170,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/admin/.config/Code/Backups/1728700815423",
+            "uiState": {
+                "mode": 1,
+                "x": 1774,
+                "y": 179,
+                "width": 1190,
+                "height": 1105
+            }
+        },
+        "openedWindows": []
+    }
+}

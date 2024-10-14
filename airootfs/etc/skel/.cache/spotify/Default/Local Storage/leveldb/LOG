@@ -1,0 +1,5 @@
+2024/10/13-05:31:01.631 1538 Reusing MANIFEST /home/admin/.cache/spotify/Default/Local Storage/leveldb/MANIFEST-000001
+2024/10/13-05:31:01.634 1538 Recovering log #4
+2024/10/13-05:31:01.635 1538 Reusing old log /home/admin/.cache/spotify/Default/Local Storage/leveldb/000004.log 
+2024/10/13-05:31:13.708 15d5 Level-0 table #8: started
+2024/10/13-05:31:13.829 15d5 Level-0 table #8: 50179 bytes OK

@@ -1,0 +1,18 @@
+import { PronounCode } from "./types";
+type PronounsWithSource = [string | null, string];
+export declare const enum PronounsFormat {
+    Lowercase = "LOWERCASE",
+    Capitalized = "CAPITALIZED"
+}
+export declare const enum PronounSource {
+    PreferPDB = 0,
+    PreferDiscord = 1
+}
+export declare function useFormattedPronouns(id: string, useGlobalProfile?: boolean): PronounsWithSource;
+export declare function useProfilePronouns(id: string, useGlobalProfile?: boolean): PronounsWithSource;
+export declare function getCachedPronouns(id: string): string | null;
+export declare function fetchPronouns(id: string): Promise<string>;
+export declare function extractPronouns(pronounSet?: {
+    [locale: string]: PronounCode[];
+}): string;
+export {};

@@ -1,0 +1,12 @@
+/// <reference types="react" />
+import "./ExpandableHeader.css";
+export interface ExpandableHeaderProps {
+    onMoreClick?: () => void;
+    moreTooltipText?: string;
+    onDropDownClick?: (state: boolean) => void;
+    defaultState?: boolean;
+    headerText: string;
+    children: React.ReactNode;
+    buttons?: React.ReactNode[];
+}
+export declare function ExpandableHeader({ children, onMoreClick, buttons, moreTooltipText, defaultState, onDropDownClick, headerText }: ExpandableHeaderProps): JSX.Element;

@@ -1,0 +1,113 @@
+/// <reference types="react" />
+import "./styles.css";
+import PronounsAboutComponent from "./components/PronounsAboutComponent";
+import { useProfilePronouns } from "./pronoundbUtils";
+declare const _default: {
+    name: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    description: string;
+    patches: {
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        }[];
+    }[];
+    settings: import("../../utils/types").DefinedSettings<{
+        pronounsFormat: {
+            type: import("../../utils/types").OptionType.SELECT;
+            description: string;
+            options: ({
+                label: string;
+                value: import("./pronoundbUtils").PronounsFormat;
+                default: true;
+            } | {
+                label: string;
+                value: import("./pronoundbUtils").PronounsFormat;
+                default?: undefined;
+            })[];
+        };
+        pronounSource: {
+            type: import("../../utils/types").OptionType.SELECT;
+            description: string;
+            options: ({
+                label: string;
+                value: import("./pronoundbUtils").PronounSource;
+                default: true;
+            } | {
+                label: string;
+                value: import("./pronoundbUtils").PronounSource;
+                default?: undefined;
+            })[];
+        };
+        showSelf: {
+            type: import("../../utils/types").OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        showInMessages: {
+            type: import("../../utils/types").OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        showInProfile: {
+            type: import("../../utils/types").OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        pronounsFormat: {
+            type: import("../../utils/types").OptionType.SELECT;
+            description: string;
+            options: ({
+                label: string;
+                value: import("./pronoundbUtils").PronounsFormat;
+                default: true;
+            } | {
+                label: string;
+                value: import("./pronoundbUtils").PronounsFormat;
+                default?: undefined;
+            })[];
+        };
+        pronounSource: {
+            type: import("../../utils/types").OptionType.SELECT;
+            description: string;
+            options: ({
+                label: string;
+                value: import("./pronoundbUtils").PronounSource;
+                default: true;
+            } | {
+                label: string;
+                value: import("./pronoundbUtils").PronounSource;
+                default?: undefined;
+            })[];
+        };
+        showSelf: {
+            type: import("../../utils/types").OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        showInMessages: {
+            type: import("../../utils/types").OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        showInProfile: {
+            type: import("../../utils/types").OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+    }>, {}>;
+    settingsAboutComponent: typeof PronounsAboutComponent;
+    PronounsChatComponentWrapper: import("react").FunctionComponent<{
+        message: import("discord-types/general").Message;
+    }>;
+    CompactPronounsChatComponentWrapper: import("react").FunctionComponent<{
+        message: import("discord-types/general").Message;
+    }>;
+    useProfilePronouns: typeof useProfilePronouns;
+} & Record<string, any>;
+export default _default;

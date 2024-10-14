@@ -1,0 +1,5 @@
+/// <reference types="react" />
+export declare function Badge({ text, color }: {
+    text: any;
+    color: any;
+}): JSX.Element;

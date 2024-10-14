@@ -1,0 +1,14 @@
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    dependencies: string[];
+    start(): Promise<void>;
+    stop(): void;
+    buildCss(): Promise<void>;
+    toggleHide(id: string): Promise<void>;
+} & Record<string, any>;
+export default _default;

@@ -1,0 +1,31 @@
+/// <reference types="react" />
+declare const _default: {
+    name: string;
+    required: true;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    dependencies: string[];
+    patches: {
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        };
+    }[];
+    commands: {
+        name: string;
+        description: string;
+        predicate: (ctx: import("../../api/Commands").CommandContext) => boolean;
+        execute(): Promise<{
+            content: string;
+        }>;
+    }[];
+    flux: {
+        CHANNEL_SELECT({ channelId }: any): Promise<void>;
+    };
+    ContributorDmWarningCard: import("react").FunctionComponent<any>;
+} & Record<string, any>;
+export default _default;

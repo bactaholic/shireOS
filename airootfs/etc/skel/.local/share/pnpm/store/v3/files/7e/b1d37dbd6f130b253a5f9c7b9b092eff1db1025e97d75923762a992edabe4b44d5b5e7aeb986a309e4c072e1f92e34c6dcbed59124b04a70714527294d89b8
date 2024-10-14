@@ -1,0 +1,4 @@
+/// <reference types="react" />
+export declare function PermissionDeniedIcon(): JSX.Element;
+export declare function PermissionAllowedIcon(): JSX.Element;
+export declare function PermissionDefaultIcon(): JSX.Element;

@@ -1,0 +1,47 @@
+/// <reference types="react" />
+import { OptionType } from "../../utils/types";
+import { User } from "discord-types/general";
+interface UserProps {
+    user: User;
+}
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    settings: import("../../utils/types").DefinedSettings<{
+        showInUserProfileModal: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        showVoiceChannelSectionHeader: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        showInUserProfileModal: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        showVoiceChannelSectionHeader: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+    }>, {}>;
+    patchModal({ user }: UserProps): JSX.Element | null;
+    patchPopout: ({ user }: UserProps) => JSX.Element;
+    patches: {
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        };
+    }[];
+} & Record<string, any>;
+export default _default;

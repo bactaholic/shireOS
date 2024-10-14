@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="appstream://xfce4-terminal.desktop" added="2024-10-12T06:27:36.449000Z" modified="2024-10-12T06:27:36.449000Z" visited="2024-10-12T06:27:36.449000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.discover.urlhandler" exec="plasma-discover %u" modified="2024-10-12T06:27:36.449000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="appstream://terminator.desktop" added="2024-10-12T06:28:35.665000Z" modified="2024-10-12T06:28:35.665000Z" visited="2024-10-12T06:28:35.665000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.discover.urlhandler" exec="plasma-discover %u" modified="2024-10-12T06:28:35.665000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/Downloads/fontawesome-free-6.6.0-desktop.zip" added="2024-10-12T20:55:08.715237Z" modified="2024-10-12T20:55:08.715244Z" visited="2024-10-12T20:55:08.715238Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-12T20:55:08.715240Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/Documents/onering.webp" added="2024-10-12T21:49:01.358441Z" modified="2024-10-12T22:01:19.296484Z" visited="2024-10-12T21:49:01.358441Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/webp"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-12T22:01:19.296483Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/Documents/oneringascii.txt" added="2024-10-12T22:00:41.982323Z" modified="2024-10-12T22:00:41.982325Z" visited="2024-10-12T22:00:41.982323Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo" exec="&apos;code-oss %F&apos;" modified="2024-10-12T22:00:41.982324Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/Downloads/ascii-art.txt" added="2024-10-12T22:01:47.904905Z" modified="2024-10-12T22:01:47.904909Z" visited="2024-10-12T22:01:47.904906Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-12T22:01:47.904907Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/Documents/onering.png" added="2024-10-12T22:02:53.951774Z" modified="2024-10-12T23:58:04.063915Z" visited="2024-10-12T22:02:53.951775Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-12T22:04:45.506415Z" count="6"/>
+          <bookmark:application name="nemo" exec="&apos;/usr/lib/firefox/firefox %u&apos;" modified="2024-10-12T23:58:04.063914Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/Downloads/icons8-one-ring-color.zip" added="2024-10-12T22:03:53.793777Z" modified="2024-10-12T22:03:53.793794Z" visited="2024-10-12T22:03:53.793783Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-12T22:03:53.793786Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/Documents/onering-img.png" added="2024-10-12T23:35:39.140468Z" modified="2024-10-12T23:36:02.931800Z" visited="2024-10-12T23:35:39.140469Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-12T23:35:39.494755Z" count="2"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2024-10-12T23:36:02.931798Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/Documents/onering-transparent.png" added="2024-10-12T23:37:32.867805Z" modified="2024-10-13T01:39:04.097282Z" visited="2024-10-12T23:37:32.867806Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2024-10-13T01:39:04.097281Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/Documents/onering-transparent-small.png" added="2024-10-12T23:45:34.074479Z" modified="2024-10-12T23:45:37.465640Z" visited="2024-10-12T23:45:34.074480Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2024-10-12T23:45:37.465639Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/Documents/oneringascii3.txt" added="2024-10-12T23:58:19.169212Z" modified="2024-10-12T23:58:19.169215Z" visited="2024-10-12T23:58:19.169213Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="nemo" exec="&apos;code-oss %F&apos;" modified="2024-10-12T23:58:19.169214Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/shireOS" added="2024-10-13T04:18:10.175919Z" modified="2024-10-13T05:30:39.731674Z" visited="2024-10-13T04:18:10.175919Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2024-10-13T05:30:39.731673Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

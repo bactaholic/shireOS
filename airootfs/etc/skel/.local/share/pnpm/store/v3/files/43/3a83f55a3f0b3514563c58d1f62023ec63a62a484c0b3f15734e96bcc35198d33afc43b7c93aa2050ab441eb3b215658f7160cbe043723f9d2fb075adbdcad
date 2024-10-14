@@ -1,0 +1,16 @@
+/// <reference types="react" />
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    start(): void;
+    contextMenus: {
+        "dev-context"(children: (import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>> | null)[], { id }: {
+            id: string;
+        }): void;
+    };
+} & Record<string, any>;
+export default _default;

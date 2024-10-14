@@ -1,0 +1,3 @@
+import * as t from "./types/classes";
+export declare const ModalImageClasses: t.ImageModalClasses;
+export declare const ButtonWrapperClasses: t.ButtonWrapperClasses;

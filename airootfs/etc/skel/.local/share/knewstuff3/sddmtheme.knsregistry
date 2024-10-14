@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="101">
+  <name>Chili login theme for KDE Plasma</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>marianarlt</author>
+  <homepage>https://store.kde.org/p/1214121</homepage>
+  <licence></licence>
+  <version>0.5.5</version>
+  <rating>87</rating>
+  <downloads>309738</downloads>
+  <installedfile>/tmp/plasma-chili.tar.gz</installedfile>
+  <id>1214121</id>
+  <releasedate>2018-11-05</releasedate>
+  <summary>&lt;strong>For KDE Plasma only!&lt;/strong>&lt;br />
+Chili is hot, just like a real chili! Spice up the login experience of your users, your family and yourself. Chili reduces all the clutter and leaves you with a clean, easy to use, login interface with a modern yet classy touch.&lt;br />
+&lt;br />
+Chili for...</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/44/96/51/1214121/3a058837efd001d12fdac2ad68a38fe9ccfd.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/44/96/51/1214121/3a058837efd001d12fdac2ad68a38fe9ccfd.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1NDE0NDQ3OTUiLCJvIjoiMSIsInMiOiJmYWRhYjAzNGNjMWQ1NWQyZTkwZjIxZTBhY2FmNGU3ZDJmNzJiODVhODNiYjlhZjFlMGUxYWI0ZDFkNjRlOWVlNTc2YTA2NGVhZDRhMTYzZTMzYWY3YmE2MGQ0NTI1NDdmYWM1NTc1NmQ1MGYwNDEzOTQ3MjQyZWU0MjM2NGEyNSIsInQiOjE3Mjg3NzA2MTgsInN0ZnAiOm51bGwsInN0aXAiOiI2OC4zLjk5LjYifQ.nEz5JLtfIHMPoHo8xZ7XpWUw6Im_lYtKmLNijn5rs9I/plasma-chili.tar.gz</payload>
+  <tags>background,linux,gplv3,kde,arch-package,x86-64,plasma,sddm,unix</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

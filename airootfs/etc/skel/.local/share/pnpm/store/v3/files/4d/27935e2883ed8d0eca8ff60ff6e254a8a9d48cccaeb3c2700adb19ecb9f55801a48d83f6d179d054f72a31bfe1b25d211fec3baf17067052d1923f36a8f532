@@ -1,0 +1,88 @@
+import { NavContextMenuPatchCallback } from "../../api/ContextMenu";
+import { OptionType } from "../../utils/types";
+declare function openImage(url: string): void;
+declare const _default: {
+    name: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    description: string;
+    tags: string[];
+    settings: import("../../utils/types").DefinedSettings<{
+        format: {
+            type: OptionType.SELECT;
+            description: string;
+            options: ({
+                label: string;
+                value: string;
+                default: true;
+            } | {
+                label: string;
+                value: string;
+                default?: undefined;
+            })[];
+        };
+        imgSize: {
+            type: OptionType.SELECT;
+            description: string;
+            options: {
+                label: string;
+                value: string;
+                default: boolean;
+            }[];
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        format: {
+            type: OptionType.SELECT;
+            description: string;
+            options: ({
+                label: string;
+                value: string;
+                default: true;
+            } | {
+                label: string;
+                value: string;
+                default?: undefined;
+            })[];
+        };
+        imgSize: {
+            type: OptionType.SELECT;
+            description: string;
+            options: {
+                label: string;
+                value: string;
+                default: boolean;
+            }[];
+        };
+    }>, {}>;
+    openImage: typeof openImage;
+    contextMenus: {
+        "user-context": NavContextMenuPatchCallback;
+        "guild-context": NavContextMenuPatchCallback;
+        "gdm-context": NavContextMenuPatchCallback;
+    };
+    patches: ({
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        };
+        all?: undefined;
+    } | {
+        find: string;
+        all: true;
+        replacement: {
+            match: RegExp;
+            replace: (m: string, iconUrl: string) => string;
+        };
+    } | {
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: (m: string, avatarUrl: string) => string;
+        };
+        all?: undefined;
+    })[];
+} & Record<string, any>;
+export default _default;

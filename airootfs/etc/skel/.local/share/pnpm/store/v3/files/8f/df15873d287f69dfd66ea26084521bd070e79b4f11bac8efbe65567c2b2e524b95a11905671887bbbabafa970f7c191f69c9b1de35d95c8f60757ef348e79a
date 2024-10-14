@@ -1,0 +1,4 @@
+/// <reference types="react" />
+import { PluginOptionComponent } from "../../../utils/types";
+import { ISettingElementProps } from ".";
+export declare function SettingCustomComponent({ option, onChange, onError }: ISettingElementProps<PluginOptionComponent>): JSX.Element;

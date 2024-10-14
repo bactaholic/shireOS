@@ -1,0 +1,127 @@
+/// <reference types="react" />
+import { OptionType } from "../../utils/types";
+declare const enum ActivitiesTypes {
+    Game = 0,
+    Embedded = 1
+}
+interface IgnoredActivity {
+    id: string;
+    name: string;
+    type: ActivitiesTypes;
+}
+declare const _default: {
+    name: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    description: string;
+    settings: import("../../utils/types").DefinedSettings<{
+        importCustomRPC: {
+            type: OptionType.COMPONENT;
+            description: string;
+            component: () => JSX.Element;
+        };
+        allowedIds: {
+            type: OptionType.COMPONENT;
+            description: string;
+            default: string;
+            onChange(newValue: string): void;
+            component: (props: import("../../utils/types").IPluginOptionComponentProps) => JSX.Element;
+        };
+        ignorePlaying: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+        ignoreStreaming: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+        ignoreListening: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+        ignoreWatching: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+        ignoreCompeting: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        importCustomRPC: {
+            type: OptionType.COMPONENT;
+            description: string;
+            component: () => JSX.Element;
+        };
+        allowedIds: {
+            type: OptionType.COMPONENT;
+            description: string;
+            default: string;
+            onChange(newValue: string): void;
+            component: (props: import("../../utils/types").IPluginOptionComponentProps) => JSX.Element;
+        };
+        ignorePlaying: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+        ignoreStreaming: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+        ignoreListening: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+        ignoreWatching: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+        ignoreCompeting: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+    }>, {
+        ignoredActivities: IgnoredActivity[];
+    }>;
+    patches: ({
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: (m: string, activities: string) => string;
+        }[];
+    } | {
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: (m: string, props: string, nowPlaying: string) => string;
+        };
+    })[];
+    start(): Promise<void>;
+    isActivityNotIgnored(props: {
+        type: number;
+        application_id?: string;
+        name?: string;
+    }): any;
+    renderToggleGameActivityButton(props: {
+        id?: string;
+        name: string;
+        exePath: string;
+    }, nowPlaying: boolean): JSX.Element;
+    renderToggleActivityButton(props: {
+        id: string;
+        name: string;
+    }): JSX.Element;
+} & Record<string, any>;
+export default _default;

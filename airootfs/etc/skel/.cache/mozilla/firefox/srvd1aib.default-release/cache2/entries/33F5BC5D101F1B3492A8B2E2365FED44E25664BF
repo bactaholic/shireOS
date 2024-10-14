@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1179.2666662" height="839.9997900000001" font-family="Consolas, Menlo, 'Bitstream Vera Sans Mono', monospace, 'Powerline Symbols'" font-size="14px">
+  <style>
+    .br { font-weight: bold }
+    .fa { fill-opacity: 0.5 }
+    .it { font-style: italic }
+    .un { text-decoration: underline }
+  </style>
+
+  <rect width="100%" height="100%" style="fill: #121314" rx="4" ry="4"></rect>
+
+  <svg x="8.42333333" y="9.333331000000001" class="default-text-fill">
+    <g style="shape-rendering: optimizeSpeed">
+
+        <rect x="244.27666657" y="802.666466" width="8.42333333" height="18.666662000000002" style="fill: #d9d9d9"></rect>
+
+
+    </g>
+
+    <text style="fill: #cccccc">
+      <tspan y="0.0">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+16
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+libspotify
+        </tspan><tspan x="151.61999994" class="br" style="fill: #4ebf22">
+12.1.51-7
+        </tspan><tspan x="235.85333324">
+[
+        </tspan><tspan x="244.27666657" class="br">
++7 ~0.07
+        </tspan><tspan x="311.66333321">
+]
+        </tspan>
+      </tspan><tspan y="18.666662000000002">
+        <tspan dy="1em" x="33.69333332">
+C API package allowing third-party developers to write applications that utilize the Spotify music streaming service
+        </tspan>
+      </tspan><tspan y="37.333324000000005">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+15
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+spotify-now-git
+        </tspan><tspan x="193.73666659" class="br" style="fill: #4ebf22">
+22.9443251-1
+        </tspan><tspan x="303.23999988">
+[
+        </tspan><tspan x="311.66333321" class="br">
++7 ~0.00
+        </tspan><tspan x="379.04999985">
+]
+        </tspan>
+      </tspan><tspan y="55.99998600000001">
+        <tspan dy="1em" x="33.69333332">
+Get information on the current Spotify song
+        </tspan>
+      </tspan><tspan y="74.66664800000001">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+14
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+playerctl-git
+        </tspan><tspan x="176.88999993000002" class="br" style="fill: #4ebf22">
+2.0.1.r4.g20b3b82-3
+        </tspan><tspan x="345.35666653">
+[
+        </tspan><tspan x="353.77999986000003" class="br">
++8 ~0.56
+        </tspan><tspan x="421.1666665">
+]
+        </tspan>
+      </tspan><tspan y="93.33331000000001">
+        <tspan dy="1em" x="33.69333332">
+mpris media player controller and lib for spotify, vlc, audacious, bmp, xmms2, and others.
+        </tspan>
+      </tspan><tspan y="111.99997200000001">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+13
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+spotify094
+        </tspan><tspan x="151.61999994" class="br" style="fill: #4ebf22">
+0.9.4.183-3
+        </tspan><tspan x="252.6999999">
+[
+        </tspan><tspan x="261.12333323" class="br">
++8 ~0.00
+        </tspan><tspan x="328.50999987">
+]
+        </tspan>
+      </tspan><tspan y="130.66663400000002">
+        <tspan dy="1em" x="33.69333332">
+A proprietary music streaming service (pre dark-UI version)
+        </tspan>
+      </tspan><tspan y="149.33329600000002">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+12
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+spotify-adkiller-dns-block-git
+        </tspan><tspan x="320.08666654" class="br" style="fill: #4ebf22">
+r82.1184e1e-4
+        </tspan><tspan x="438.01333316">
+[
+        </tspan><tspan x="446.43666649" class="br">
++10 ~0.00
+        </tspan><tspan x="522.24666646">
+]
+        </tspan>
+      </tspan><tspan y="167.99995800000002">
+        <tspan dy="1em" x="33.69333332">
+Experimental dns blocking from Spotify AdKiller
+        </tspan>
+      </tspan><tspan y="186.66662000000002">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+11
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+spotify-dl-git
+        </tspan><tspan x="185.31333326" class="br" style="fill: #4ebf22">
+r9.97bdc5c-1
+        </tspan><tspan x="294.81666655">
+[
+        </tspan><tspan x="303.23999988" class="br">
++11 ~0.00
+        </tspan><tspan x="379.04999985">
+]
+        </tspan>
+      </tspan><tspan y="205.33328200000003">
+        <tspan dy="1em" x="33.69333332">
+Script that allows you to download Spotify songs or playlists from Youtube
+        </tspan>
+      </tspan><tspan y="223.99994400000003">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+10
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+spotify-adblock-git
+        </tspan><tspan x="227.42999991" class="br" style="fill: #4ebf22">
+r68.624fad4-1
+        </tspan><tspan x="345.35666653">
+[
+        </tspan><tspan x="353.77999986000003" class="br">
++23 ~1.17
+        </tspan><tspan x="429.58999983">
+]
+        </tspan>
+      </tspan><tspan y="242.66660600000003">
+        <tspan dy="1em" x="33.69333332">
+Adblocker for Spotify
+        </tspan>
+      </tspan><tspan y="261.33326800000003">
+        <tspan dy="1em" x="8.42333333" style="fill: #b954e1">
+9
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+spotify-dev
+        </tspan><tspan x="160.04333327" class="br" style="fill: #4ebf22">
+1.1.42.622-2
+        </tspan><tspan x="269.54666656">
+[
+        </tspan><tspan x="277.96999989" class="br">
++23 ~4.11
+        </tspan><tspan x="353.77999986000003">
+]
+        </tspan>
+      </tspan><tspan y="279.99993">
+        <tspan dy="1em" x="33.69333332">
+A proprietary music streaming service
+        </tspan>
+      </tspan><tspan y="298.66659200000004">
+        <tspan dy="1em" x="8.42333333" style="fill: #b954e1">
+8
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+python2-pyspotify
+        </tspan><tspan x="210.58333325" class="br" style="fill: #4ebf22">
+2.1.3-1
+        </tspan><tspan x="277.96999989">
+[
+        </tspan><tspan x="286.39333322" class="br">
++24 ~0.00
+        </tspan><tspan x="362.20333319">
+]
+        </tspan>
+      </tspan><tspan y="317.333254">
+        <tspan dy="1em" x="33.69333332">
+A Python Spotify library
+        </tspan>
+      </tspan><tspan y="335.99991600000004">
+        <tspan dy="1em" x="8.42333333" style="fill: #b954e1">
+7
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+spotify-adkiller-git
+        </tspan><tspan x="235.85333324" class="br" style="fill: #4ebf22">
+r177.2dabf81-1
+        </tspan><tspan x="362.20333319">
+[
+        </tspan><tspan x="370.62666652" class="br">
++26 ~0.07
+        </tspan><tspan x="446.43666649">
+]
+        </tspan>
+      </tspan><tspan y="354.666578">
+        <tspan dy="1em" x="33.69333332">
+Your Party with Spotify - without ads!
+        </tspan>
+      </tspan><tspan y="373.33324000000005">
+        <tspan dy="1em" x="8.42333333" style="fill: #b954e1">
+6
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+spotify-legacy
+        </tspan><tspan x="185.31333326" class="br" style="fill: #4ebf22">
+0.9.17-3
+        </tspan><tspan x="261.12333323">
+[
+        </tspan><tspan x="269.54666656" class="br">
++33 ~0.00
+        </tspan><tspan x="345.35666653">
+]
+        </tspan>
+      </tspan><tspan y="391.999902">
+        <tspan dy="1em" x="33.69333332">
+A proprietary music streaming service.
+        </tspan>
+      </tspan><tspan y="410.66656400000005">
+        <tspan dy="1em" x="8.42333333" style="fill: #b954e1">
+5
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+spotify-tui
+        </tspan><tspan x="160.04333327" class="br" style="fill: #4ebf22">
+0.22.0-1
+        </tspan><tspan x="235.85333324">
+[
+        </tspan><tspan x="244.27666657" class="br">
++35 ~3.43
+        </tspan><tspan x="320.08666654">
+]
+        </tspan>
+      </tspan><tspan y="429.333226">
+        <tspan dy="1em" x="33.69333332">
+Spotify client for the terminal written in Rust
+        </tspan>
+      </tspan><tspan y="447.99988800000006">
+        <tspan dy="1em" x="8.42333333" style="fill: #b954e1">
+4
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+mopidy-spotify
+        </tspan><tspan x="185.31333326" class="br" style="fill: #4ebf22">
+4.0.1-1
+        </tspan><tspan x="252.6999999">
+[
+        </tspan><tspan x="261.12333323" class="br">
++91 ~0.31
+        </tspan><tspan x="336.9333332">
+]
+        </tspan>
+      </tspan><tspan y="466.66655000000003">
+        <tspan dy="1em" x="33.69333332">
+Mopidy extension for playing music from Spotify
+        </tspan>
+      </tspan><tspan y="485.33321200000006">
+        <tspan dy="1em" x="8.42333333" style="fill: #b954e1">
+3
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #dd3c69">
+community
+        </tspan><tspan x="101.07999996000001">
+/
+        </tspan><tspan x="109.50333329" class="br">
+spotifyd
+        </tspan><tspan x="185.31333326" class="br" style="fill: #4ebf22">
+0.2.24-2
+        </tspan><tspan x="261.12333323">
+[
+        </tspan><tspan x="269.54666656" class="br">
+3.02MB 11.56MB
+        </tspan><tspan x="387.47333318">
+]
+        </tspan>
+      </tspan><tspan y="503.99987400000003">
+        <tspan dy="1em" x="33.69333332">
+Leightweigt spotify streaming daemon with spotify connect support
+        </tspan>
+      </tspan><tspan y="522.6665360000001">
+        <tspan dy="1em" x="8.42333333" style="fill: #b954e1">
+2
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #dd3c69">
+community
+        </tspan><tspan x="101.07999996000001">
+/
+        </tspan><tspan x="109.50333329" class="br">
+playerctl
+        </tspan><tspan x="193.73666659" class="br" style="fill: #4ebf22">
+2.2.1-1
+        </tspan><tspan x="261.12333323">
+[
+        </tspan><tspan x="269.54666656" class="br">
+75.27KB 427.48KB
+        </tspan><tspan x="404.31999984000004">
+]
+        </tspan>
+      </tspan><tspan y="541.333198">
+        <tspan dy="1em" x="33.69333332">
+mpris media player controller and lib for spotify, vlc, audacious, bmp, xmms2, and others.
+        </tspan>
+      </tspan><tspan y="559.99986">
+        <tspan dy="1em" x="8.42333333" style="fill: #b954e1">
+1
+        </tspan><tspan x="25.269999990000002" class="br" style="fill: #54e1b9">
+aur
+        </tspan><tspan x="50.539999980000005">
+/
+        </tspan><tspan x="58.96333331" class="br">
+spotify
+        </tspan><tspan x="126.34999995" class="br" style="fill: #4ebf22">
+1:1.1.42.622-2
+        </tspan><tspan x="252.6999999">
+[
+        </tspan><tspan x="261.12333323" class="br">
++2054 ~37.05
+        </tspan><tspan x="362.20333319">
+]
+        </tspan>
+      </tspan><tspan y="578.6665220000001">
+        <tspan dy="1em" x="33.69333332">
+A proprietary music streaming service
+        </tspan>
+      </tspan><tspan y="597.3331840000001">
+        <tspan dy="1em" x="0.0" class="br" style="fill: #26b0d7">
+::
+        </tspan><tspan x="25.269999990000002" class="br">
+Packages to install (eg: 1 2 3, 1-3 or ^4): 
+        </tspan><tspan x="395.89666651">
+1
+        </tspan>
+      </tspan><tspan y="615.999846">
+        <tspan dy="1em" x="0.0" class="br" style="fill: #26b0d7">
+::
+        </tspan><tspan x="25.269999990000002" class="br">
+Resolving dependencies...
+        </tspan>
+      </tspan><tspan y="634.666508">
+        <tspan dy="1em" x="0.0" class="br" style="fill: #26b0d7">
+::
+        </tspan><tspan x="25.269999990000002" class="br">
+There are 5 providers avaliable for spotify:
+        </tspan>
+      </tspan><tspan y="653.33317">
+        <tspan dy="1em" x="0.0" class="br" style="fill: #26b0d7">
+::
+        </tspan><tspan x="25.269999990000002" class="br">
+Repository
+        </tspan><tspan x="117.92666662" class="br" style="fill: #26b0d7">
+AUR
+        </tspan><tspan x="143.19666661">
+:
+        </tspan>
+      </tspan><tspan y="671.9998320000001">
+        <tspan dy="1em" x="33.69333332">
+1) spotify
+        </tspan><tspan x="134.77333328">
+2) spotify-dev
+        </tspan><tspan x="269.54666656">
+3) spotify-legacy
+        </tspan><tspan x="429.58999983">
+4) spotify094
+        </tspan><tspan x="555.93999978">
+5) spotio
+        </tspan>
+      </tspan><tspan y="690.6664940000001">
+        <tspan dy="1em" x="0.0">
+Enter a number (default=1):
+        </tspan>
+      </tspan><tspan y="709.333156">
+        <tspan dy="1em" x="0.0" class="br" style="fill: #26b0d7">
+::
+        </tspan><tspan x="25.269999990000002" class="br">
+Calculating conflicts...
+        </tspan>
+      </tspan><tspan y="727.999818">
+        <tspan dy="1em" x="0.0" class="br" style="fill: #26b0d7">
+::
+        </tspan><tspan x="25.269999990000002" class="br">
+Calculating inner conflicts...
+        </tspan>
+      </tspan><tspan y="765.3331420000001">
+        <tspan dy="1em" x="0.0" class="br">
+Aur (1) 
+        </tspan><tspan x="67.38666664">
+spotify-1:1.1.42.622-2
+        </tspan>
+      </tspan><tspan y="802.666466">
+        <tspan dy="1em" x="0.0" class="br" style="fill: #26b0d7">
+::
+        </tspan><tspan x="25.269999990000002" class="br">
+Proceed to review?
+        </tspan><tspan x="185.31333326" class="br">
+[Y/n]:
+        </tspan>
+      </tspan>
+    </text>
+  </svg>
+
+  <g transform="translate(-40 -40)">
+    <svg x="50%" y="50%" width="80" height="80">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000.0 1000.0" style="filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4))">
+  <defs>
+    <mask id="small-triangle-mask">
+      <rect width="100%" height="100%" fill="white"></rect>
+      <polygon points="700.0 500.0, 400.00000000000006 326.7949192431122, 399.9999999999999 673.2050807568877" fill="black">
+      </polygon>
+    </mask>
+  </defs>
+  <polygon points="1000.0 500.0, 250.0000000000001 66.98729810778059, 249.99999999999977 933.0127018922192" mask="url(#small-triangle-mask)" fill="white">
+  </polygon>
+  <polyline points="673.2050807568878 400.0, 326.7949192431123 600.0" stroke="white" stroke-width="90">
+  </polyline>
+</svg>
+    </svg>
+  </g>
+</svg>cÊ8‘–Æ      g
+9g
+9Gkç•g
+'I   ÷    O^partitionKey=%28https%2Cgithub.com%29,:https://camo.githubusercontent.com/884aa33a85aabc562806551544c5b0df3b273821da6f3f76dc27413176626da0/68747470733a2f2f61736369696e656d612e6f72672f612f734568315a705a5a556758557367714b7875446468706445452e737667 necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br, zstd response-head HTTP/2 200 
+cache-control: public, max-age=3600, must-revalidate
+content-security-policy: default-src 'none'; img-src data:; style-src 'unsafe-inline'
+content-type: image/svg+xml; charset=utf-8
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-frame-options: deny
+x-xss-protection: 1; mode=block
+x-github-request-id: 2478:1DEE45:62C667:6C87F6:670A1938
+server: github.com
+accept-ranges: bytes
+age: 0
+date: Sat, 12 Oct 2024 06:37:45 GMT
+via: 1.1 varnish
+x-served-by: cache-phx1710059-PHX
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1728715065.611501,VS0,VE641
+vary: Accept-Encoding
+x-fastly-request-id: d254c0b337ce300956150cdf69f826057cf59d6a
+timing-allow-origin: https://github.com
+content-length: 15368
+X-Firefox-Spdy: h2
+ original-response-headers cache-control: public, max-age=3600, must-revalidate
+content-security-policy: default-src 'none'; img-src data:; style-src 'unsafe-inline'
+content-type: image/svg+xml; charset=utf-8
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-frame-options: deny
+x-xss-protection: 1; mode=block
+x-github-request-id: 2478:1DEE45:62C667:6C87F6:670A1938
+server: github.com
+accept-ranges: bytes
+age: 0
+date: Sat, 12 Oct 2024 06:37:45 GMT
+via: 1.1 varnish
+x-served-by: cache-phx1710059-PHX
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1728715065.611501,VS0,VE641
+vary: Accept-Encoding
+x-fastly-request-id: d254c0b337ce300956150cdf69f826057cf59d6a
+timing-allow-origin: https://github.com
+content-length: 15368
+X-Firefox-Spdy: h2
+ ctid 3 net-response-time-onstart 678 net-response-time-onstop 679   <

@@ -1,0 +1,77 @@
+/// <reference types="react" />
+import { OptionType } from "../../utils/types";
+import { Channel, Message, User } from "discord-types/general";
+declare function SettingsComponent(props: {
+    setValue(v: any): void;
+}): JSX.Element;
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    settings: import("../../utils/types").DefinedSettings<{
+        dontShowForBots: {
+            description: string;
+            type: OptionType.BOOLEAN;
+        };
+        dontShowBotTag: {
+            description: string;
+            type: OptionType.BOOLEAN;
+        };
+        tagSettings: {
+            type: OptionType.COMPONENT;
+            component: typeof SettingsComponent;
+            description: string;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        dontShowForBots: {
+            description: string;
+            type: OptionType.BOOLEAN;
+        };
+        dontShowBotTag: {
+            description: string;
+            type: OptionType.BOOLEAN;
+        };
+        tagSettings: {
+            type: OptionType.COMPONENT;
+            component: typeof SettingsComponent;
+            description: string;
+        };
+    }>, {}>;
+    patches: ({
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        };
+    } | {
+        find: string;
+        replacement: ({
+            match: RegExp;
+            replace: (_: string, origSwitch: string, variant: string, tags: string, displayedText: string, strings: string) => string;
+        } | {
+            match: RegExp;
+            replace: string;
+        })[];
+    })[];
+    start(): void;
+    getPermissions(user: User, channel: Channel): string[];
+    getTagTypes(): {};
+    isOPTag: (tag: number) => boolean;
+    getTagText(passedTagName: string, strings: Record<string, string>): any;
+    getTag({ message, user, channelId, origType, location, channel }: {
+        message?: Message;
+        user: User & {
+            isClyde(): boolean;
+        };
+        channel?: Channel & {
+            isForumPost(): boolean;
+        };
+        channelId?: string;
+        origType?: number;
+        location: "chat" | "not-chat";
+    }): number | null;
+} & Record<string, any>;
+export default _default;

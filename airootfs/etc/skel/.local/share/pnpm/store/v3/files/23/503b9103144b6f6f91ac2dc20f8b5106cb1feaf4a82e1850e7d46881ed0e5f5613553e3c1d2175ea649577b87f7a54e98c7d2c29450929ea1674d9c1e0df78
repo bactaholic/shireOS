@@ -1,0 +1,10 @@
+/// <reference types="react" />
+import "./VoiceChannelSection.css";
+import { Channel } from "discord-types/general";
+interface VoiceChannelFieldProps {
+    channel: Channel;
+    label: string;
+    showHeader: boolean;
+}
+export declare const VoiceChannelSection: ({ channel, label, showHeader }: VoiceChannelFieldProps) => JSX.Element;
+export {};

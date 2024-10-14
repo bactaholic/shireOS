@@ -1,0 +1,6 @@
+{
+  "default.route.alsa_card.pci-0000_08_00.1:profile:off": [ ],
+  "default.route.alsa_card.pci-0000_0a_00.4:profile:off": [ ],
+  "default.route.alsa_card.pci-0000_08_00.1:profile:output:hdmi-stereo": [ ],
+  "default.route.alsa_card.pci-0000_0a_00.4:profile:output:analog-stereo+input:analog-stereo": [ ]
+}

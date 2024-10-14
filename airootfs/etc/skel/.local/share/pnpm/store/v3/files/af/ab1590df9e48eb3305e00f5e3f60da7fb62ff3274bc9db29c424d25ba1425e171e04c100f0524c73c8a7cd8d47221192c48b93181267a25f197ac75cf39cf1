@@ -1,0 +1,38 @@
+import { ApplicationCommandOptionType } from "../../api/Commands";
+import { ApplicationCommandInputType } from "../../api/Commands/types";
+import { OptionType } from "../../utils/types";
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    dependencies: string[];
+    settings: import("../../utils/types").DefinedSettings<{
+        resultsAmount: {
+            type: OptionType.NUMBER;
+            description: string;
+            default: number;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        resultsAmount: {
+            type: OptionType.NUMBER;
+            description: string;
+            default: number;
+        };
+    }>, {}>;
+    commands: {
+        name: string;
+        description: string;
+        inputType: ApplicationCommandInputType.BUILT_IN;
+        options: {
+            type: ApplicationCommandOptionType.STRING;
+            name: string;
+            description: string;
+            required: true;
+        }[];
+        execute: (args: import("../../api/Commands").Argument[], ctx: import("../../api/Commands").CommandContext) => Promise<undefined>;
+    }[];
+} & Record<string, any>;
+export default _default;

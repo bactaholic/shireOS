@@ -1,0 +1,20 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# aliases
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias padd='sudo pacman -S'
+alias prm='sudo pacman -R'
+alias pupdate='sudo pacman -Syu'
+alias sysctl='sudo systemctl'
+alias screen-region='hyprshot -m region --clipboard-only'
+alias screen-full='hyprshot -m output --clipboard-only'
+
+# other 
+PS1='[\u@\h \W]\$ '

@@ -1,0 +1,92 @@
+import "./styles.css";
+import { NavContextMenuPatchCallback } from "../../api/ContextMenu";
+import { translate } from "./utils";
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    dependencies: string[];
+    settings: import("../../utils/types").DefinedSettings<{
+        receivedInput: {
+            type: import("../../utils/types").OptionType.STRING;
+            description: string;
+            default: string;
+            hidden: true;
+        };
+        receivedOutput: {
+            type: import("../../utils/types").OptionType.STRING;
+            description: string;
+            default: string;
+            hidden: true;
+        };
+        sentInput: {
+            type: import("../../utils/types").OptionType.STRING;
+            description: string;
+            default: string;
+            hidden: true;
+        };
+        sentOutput: {
+            type: import("../../utils/types").OptionType.STRING;
+            description: string;
+            default: string;
+            hidden: true;
+        };
+        autoTranslate: {
+            type: import("../../utils/types").OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+        showChatBarButton: {
+            type: import("../../utils/types").OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        receivedInput: {
+            type: import("../../utils/types").OptionType.STRING;
+            description: string;
+            default: string;
+            hidden: true;
+        };
+        receivedOutput: {
+            type: import("../../utils/types").OptionType.STRING;
+            description: string;
+            default: string;
+            hidden: true;
+        };
+        sentInput: {
+            type: import("../../utils/types").OptionType.STRING;
+            description: string;
+            default: string;
+            hidden: true;
+        };
+        sentOutput: {
+            type: import("../../utils/types").OptionType.STRING;
+            description: string;
+            default: string;
+            hidden: true;
+        };
+        autoTranslate: {
+            type: import("../../utils/types").OptionType.BOOLEAN;
+            description: string;
+            default: false;
+        };
+        showChatBarButton: {
+            type: import("../../utils/types").OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+    }>, {
+        showAutoTranslateAlert: boolean;
+    }>;
+    contextMenus: {
+        message: NavContextMenuPatchCallback;
+    };
+    translate: typeof translate;
+    start(): void;
+    stop(): void;
+} & Record<string, any>;
+export default _default;

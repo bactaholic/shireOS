@@ -1,0 +1,5 @@
+/// <reference types="react" />
+export declare function MemberCount({ isTooltip, tooltipGuildId }: {
+    isTooltip?: true;
+    tooltipGuildId?: string;
+}): JSX.Element | null;

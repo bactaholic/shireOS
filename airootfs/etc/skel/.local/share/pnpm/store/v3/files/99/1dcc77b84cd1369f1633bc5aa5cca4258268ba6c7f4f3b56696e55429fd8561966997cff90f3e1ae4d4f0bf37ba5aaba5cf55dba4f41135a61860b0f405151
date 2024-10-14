@@ -1,0 +1,81 @@
+import { OptionType } from "../../utils/types";
+declare const _default: {
+    name: string;
+    tags: string[];
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    patches: ({
+        find: string;
+        predicate: () => boolean;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        };
+        all?: undefined;
+    } | {
+        find: string;
+        predicate: () => boolean;
+        all: true;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        };
+    })[];
+    settings: import("../../utils/types").DefinedSettings<{
+        showTimeouts: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        showInvitesPaused: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        showModView: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        disableDiscoveryFilters: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        disableDisallowedDiscoveryFilters: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        showTimeouts: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        showInvitesPaused: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        showModView: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        disableDiscoveryFilters: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+        disableDisallowedDiscoveryFilters: {
+            type: OptionType.BOOLEAN;
+            description: string;
+            default: true;
+        };
+    }>, {}>;
+} & Record<string, any>;
+export default _default;

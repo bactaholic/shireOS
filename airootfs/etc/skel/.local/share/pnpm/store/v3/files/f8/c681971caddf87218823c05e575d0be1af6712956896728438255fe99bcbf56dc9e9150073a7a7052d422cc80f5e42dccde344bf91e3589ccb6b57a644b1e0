@@ -1,0 +1,42 @@
+/// <reference types="react" />
+import "./clientTheme.css";
+import { OptionType, StartAt } from "../../utils/types";
+declare const _default: {
+    name: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    description: string;
+    settings: import("../../utils/types").DefinedSettings<{
+        color: {
+            description: string;
+            type: OptionType.COMPONENT;
+            default: string;
+            component: () => JSX.Element;
+        };
+        resetColor: {
+            description: string;
+            type: OptionType.COMPONENT;
+            default: string;
+            component: () => JSX.Element;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        color: {
+            description: string;
+            type: OptionType.COMPONENT;
+            default: string;
+            component: () => JSX.Element;
+        };
+        resetColor: {
+            description: string;
+            type: OptionType.COMPONENT;
+            default: string;
+            component: () => JSX.Element;
+        };
+    }>, {}>;
+    startAt: StartAt.DOMContentLoaded;
+    start(): Promise<void>;
+    stop(): void;
+} & Record<string, any>;
+export default _default;

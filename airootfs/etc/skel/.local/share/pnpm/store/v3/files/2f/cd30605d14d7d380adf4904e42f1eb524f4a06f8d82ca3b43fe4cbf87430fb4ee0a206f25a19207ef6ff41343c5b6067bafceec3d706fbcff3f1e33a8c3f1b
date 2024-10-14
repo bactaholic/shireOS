@@ -1,0 +1,96 @@
+/// <reference types="react" />
+import { Upload } from "../../api/MessageEvents";
+import { OptionType } from "../../utils/types";
+type AnonUpload = Upload & {
+    anonymise?: boolean;
+};
+declare const enum Methods {
+    Random = 0,
+    Consistent = 1,
+    Timestamp = 2
+}
+declare const _default: {
+    name: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    description: string;
+    patches: {
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        };
+    }[];
+    settings: import("../../utils/types").DefinedSettings<{
+        anonymiseByDefault: {
+            description: string;
+            type: OptionType.BOOLEAN;
+            default: true;
+        };
+        method: {
+            description: string;
+            type: OptionType.SELECT;
+            options: ({
+                label: string;
+                value: Methods;
+                default: true;
+            } | {
+                label: string;
+                value: Methods;
+                default?: undefined;
+            })[];
+        };
+        randomisedLength: {
+            description: string;
+            type: OptionType.NUMBER;
+            default: number;
+            disabled: () => boolean;
+        };
+        consistent: {
+            description: string;
+            type: OptionType.STRING;
+            default: string;
+            disabled: () => boolean;
+        };
+    }, import("../../utils/types").SettingsChecks<{
+        anonymiseByDefault: {
+            description: string;
+            type: OptionType.BOOLEAN;
+            default: true;
+        };
+        method: {
+            description: string;
+            type: OptionType.SELECT;
+            options: ({
+                label: string;
+                value: Methods;
+                default: true;
+            } | {
+                label: string;
+                value: Methods;
+                default?: undefined;
+            })[];
+        };
+        randomisedLength: {
+            description: string;
+            type: OptionType.NUMBER;
+            default: number;
+            disabled: () => boolean;
+        };
+        consistent: {
+            description: string;
+            type: OptionType.STRING;
+            default: string;
+            disabled: () => boolean;
+        };
+    }>, {}>;
+    renderIcon: import("react").FunctionComponent<{
+        upload: AnonUpload;
+        draftType: unknown;
+        channelId: string;
+    }>;
+    anonymise(upload: AnonUpload): string;
+} & Record<string, any>;
+export default _default;

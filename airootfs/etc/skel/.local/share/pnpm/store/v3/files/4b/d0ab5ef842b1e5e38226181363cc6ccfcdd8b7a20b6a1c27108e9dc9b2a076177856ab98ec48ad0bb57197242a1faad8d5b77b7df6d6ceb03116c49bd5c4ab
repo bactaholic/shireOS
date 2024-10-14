@@ -1,0 +1,33 @@
+import { OptionType } from "../../utils/types";
+declare const _default: {
+    name: string;
+    description: string;
+    authors: {
+        name: string;
+        id: bigint;
+    }[];
+    patches: ({
+        find: string;
+        predicate: () => boolean;
+        replacement: {
+            match: RegExp;
+            replace: (_: any, props: any) => string;
+        }[];
+    } | {
+        find: string;
+        replacement: {
+            match: RegExp;
+            replace: string;
+        }[];
+    })[];
+    options: {
+        ignoreBlockedMessages: {
+            description: string;
+            type: OptionType.BOOLEAN;
+            default: false;
+            restartNeeded: true;
+        };
+    };
+    isBlocked: (message: any) => any;
+} & Record<string, any>;
+export default _default;

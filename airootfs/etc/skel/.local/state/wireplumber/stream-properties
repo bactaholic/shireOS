@@ -1,0 +1,14 @@
+[stream-properties]
+Audio/Sink:node.name:alsa_output.pci-0000_08_00.1.pro-output-3={"channelVolumes":[1.000000, 1.000000], "channelMap":["AUX0", "AUX1"]}
+Audio/Sink:node.name:alsa_output.pci-0000_08_00.1.pro-output-3.2={"channelMap":["AUX0", "AUX1", "AUX2", "AUX3", "AUX4", "AUX5", "AUX6", "AUX7"], "channelVolumes":[1.000000, 1.000000]}
+Audio/Sink:node.name:alsa_output.pci-0000_08_00.1.pro-output-7={"channelVolumes":[1.000000, 1.000000], "channelMap":["AUX0", "AUX1", "AUX2", "AUX3", "AUX4", "AUX5", "AUX6", "AUX7"]}
+Audio/Sink:node.name:alsa_output.pci-0000_08_00.1.pro-output-7.2={"channelMap":["AUX0", "AUX1", "AUX2", "AUX3", "AUX4", "AUX5", "AUX6", "AUX7"], "channelVolumes":[1.000000, 1.000000]}
+Audio/Sink:node.name:alsa_output.pci-0000_08_00.1.pro-output-8={"channelVolumes":[1.000000, 1.000000], "channelMap":["AUX0", "AUX1", "AUX2", "AUX3", "AUX4", "AUX5", "AUX6", "AUX7"]}
+Audio/Sink:node.name:alsa_output.pci-0000_08_00.1.pro-output-8.2={"channelMap":["AUX0", "AUX1", "AUX2", "AUX3", "AUX4", "AUX5", "AUX6", "AUX7"], "channelVolumes":[1.000000, 1.000000]}
+Audio/Sink:node.name:alsa_output.pci-0000_08_00.1.pro-output-9={"channelVolumes":[1.000000, 1.000000], "channelMap":["AUX0", "AUX1", "AUX2", "AUX3", "AUX4", "AUX5", "AUX6", "AUX7"]}
+Audio/Sink:node.name:alsa_output.pci-0000_08_00.1.pro-output-9.2={"channelMap":["AUX0", "AUX1", "AUX2", "AUX3", "AUX4", "AUX5", "AUX6", "AUX7"], "channelVolumes":[1.000000, 1.000000]}
+Audio/Sink:node.name:auto_null={"channelMap":["FL", "FR"], "mute":false, "volume":1.000000, "channelVolumes":[1.000000, 1.000000]}
+Input/Audio:application.id:org.kde.plasma-pa={"channelVolumes":[1.000000], "mute":false, "volume":1.000000, "channelMap":["MONO"]}
+Output/Audio:application.name:Chromium={"channelMap":["FL", "FR"], "mute":false, "channelVolumes":[1.000000, 1.000000], "volume":1.000000}
+Output/Audio:application.name:Firefox={"channelMap":["FL", "FR"], "mute":false, "channelVolumes":[1.000000, 1.000000], "volume":1.000000}
+Output/Audio:media.role:Notification={"channelMap":["FL", "FR"], "mute":false, "channelVolumes":[1.000000, 1.000000], "volume":1.000000}

@@ -1,0 +1,155 @@
+/// <reference types="react" />
+import type { WebpackInstance } from "discord-types/other";
+export declare let _resolveReady: () => void;
+/**
+ * Fired once a gateway connection to Discord has been established.
+ * This indicates that the core webpack modules have been initialised
+ */
+export declare const onceReady: Promise<void>;
+export declare let wreq: WebpackInstance;
+export declare let cache: WebpackInstance["c"];
+export type FilterFn = (mod: any) => boolean;
+export declare const filters: {
+    byProps: (...props: string[]) => FilterFn;
+    byCode: (...code: string[]) => FilterFn;
+    byStoreName: (name: string) => FilterFn;
+    componentByCode: (...code: string[]) => FilterFn;
+};
+export type CallbackFn = (mod: any, id: string) => void;
+export declare const subscriptions: Map<FilterFn, CallbackFn>;
+export declare const moduleListeners: Set<CallbackFn>;
+export declare const factoryListeners: Set<(factory: (module: any, exports: any, require: WebpackInstance) => void) => void>;
+export declare const beforeInitListeners: Set<(wreq: WebpackInstance) => void>;
+export declare function _initWebpack(webpackRequire: WebpackInstance): void;
+export declare function handleModuleNotFound(method: string, ...filter: unknown[]): void;
+/**
+ * Find the first module that matches the filter
+ */
+export declare const find: (filter: FilterFn, { isIndirect, isWaitFor }?: {
+    isIndirect?: boolean;
+    isWaitFor?: boolean;
+}) => any;
+export declare function findAll(filter: FilterFn): any[];
+/**
+ * Same as {@link find} but in bulk
+ * @param filterFns Array of filters. Please note that this array will be modified in place, so if you still
+ *                need it afterwards, pass a copy.
+ * @returns Array of results in the same order as the passed filters
+ */
+export declare const findBulk: (...filterFns: FilterFn[]) => any;
+/**
+ * Find the id of the first module factory that includes all the given code
+ * @returns string or null
+ */
+export declare const findModuleId: (...code: string[]) => string | null;
+/**
+ * Find the first module factory that includes all the given code
+ * @returns The module factory or null
+ */
+export declare function findModuleFactory(...code: string[]): any;
+export declare const lazyWebpackSearchHistory: ["find" | "findByProps" | "findByCode" | "findStore" | "findComponent" | "findComponentByCode" | "findExportedComponent" | "waitFor" | "waitForComponent" | "waitForStore" | "proxyLazyWebpack" | "LazyComponentWebpack" | "extractAndLoadChunks", any[]][];
+/**
+ * This is just a wrapper around {@link proxyLazy} to make our reporter test for your webpack finds.
+ *
+ * Wraps the result of {@link makeLazy} in a Proxy you can consume as if it wasn't lazy.
+ * On first property access, the lazy is evaluated
+ * @param factory lazy factory
+ * @param attempts how many times to try to evaluate the lazy before giving up
+ * @returns Proxy
+ *
+ * Note that the example below exists already as an api, see {@link findByPropsLazy}
+ * @example const mod = proxyLazy(() => findByProps("blah")); console.log(mod.blah);
+ */
+export declare function proxyLazyWebpack<T = any>(factory: () => any, attempts?: number): T;
+/**
+ * This is just a wrapper around {@link LazyComponent} to make our reporter test for your webpack finds.
+ *
+ * A lazy component. The factory method is called on first render.
+ * @param factory Function returning a Component
+ * @param attempts How many times to try to get the component before giving up
+ * @returns Result of factory function
+ */
+export declare function LazyComponentWebpack<T extends object = any>(factory: () => any, attempts?: number): import("react").ComponentType<T>;
+/**
+ * Find the first module that matches the filter, lazily
+ */
+export declare function findLazy(filter: FilterFn): any;
+/**
+ * Find the first module that has the specified properties
+ */
+export declare function findByProps(...props: string[]): any;
+/**
+ * Find the first module that has the specified properties, lazily
+ */
+export declare function findByPropsLazy(...props: string[]): any;
+/**
+ * Find the first function that includes all the given code
+ */
+export declare function findByCode(...code: string[]): any;
+/**
+ * Find the first function that includes all the given code, lazily
+ */
+export declare function findByCodeLazy(...code: string[]): any;
+/**
+ * Find a store by its displayName
+ */
+export declare function findStore(name: string): any;
+/**
+ * Find a store by its displayName, lazily
+ */
+export declare function findStoreLazy(name: string): any;
+/**
+ * Finds the component which includes all the given code. Checks for plain components, memos and forwardRefs
+ */
+export declare function findComponentByCode(...code: string[]): any;
+/**
+ * Finds the first component that matches the filter, lazily.
+ */
+export declare function findComponentLazy<T extends object = any>(filter: FilterFn): import("react").ComponentType<T>;
+/**
+ * Finds the first component that includes all the given code, lazily
+ */
+export declare function findComponentByCodeLazy<T extends object = any>(...code: string[]): import("react").ComponentType<T>;
+/**
+ * Finds the first component that is exported by the first prop name, lazily
+ */
+export declare function findExportedComponentLazy<T extends object = any>(...props: string[]): import("react").ComponentType<T>;
+/**
+ * Extract and load chunks using their entry point
+ * @param code An array of all the code the module factory containing the lazy chunk loading must include
+ * @param matcher A RegExp that returns the chunk ids array as the first capture group and the entry point id as the second. Defaults to a matcher that captures the lazy chunk loading found in the module factory
+ * @returns A promise that resolves when the chunks were loaded
+ */
+export declare function extractAndLoadChunks(code: string[], matcher?: RegExp): Promise<void>;
+/**
+ * This is just a wrapper around {@link extractAndLoadChunks} to make our reporter test for your webpack finds.
+ *
+ * Extract and load chunks using their entry point
+ * @param code An array of all the code the module factory containing the lazy chunk loading must include
+ * @param matcher A RegExp that returns the chunk ids array as the first capture group and the entry point id as the second. Defaults to a matcher that captures the lazy chunk loading found in the module factory
+ * @returns A function that returns a promise that resolves when the chunks were loaded, on first call
+ */
+export declare function extractAndLoadChunksLazy(code: string[], matcher?: RegExp): () => Promise<void>;
+/**
+ * Wait for a module that matches the provided filter to be registered,
+ * then call the callback with the module as the first argument
+ */
+export declare function waitFor(filter: string | string[] | FilterFn, callback: CallbackFn, { isIndirect }?: {
+    isIndirect?: boolean;
+}): undefined;
+/**
+ * Search modules by keyword. This searches the factory methods,
+ * meaning you can search all sorts of things, displayName, methodName, strings somewhere in the code, etc
+ * @param filters One or more strings or regexes
+ * @returns Mapping of found modules
+ */
+export declare function search(...filters: Array<string | RegExp>): Record<number, Function>;
+/**
+ * Extract a specific module by id into its own Source File. This has no effect on
+ * the code, it is only useful to be able to look at a specific module without having
+ * to view a massive file. extract then returns the extracted module so you can jump to it.
+ * As mentioned above, note that this extracted module is not actually used,
+ * so putting breakpoints or similar will have no effect.
+ * @param id The id of the module to extract
+ */
+export declare function extract(id: string | number): Function | null;

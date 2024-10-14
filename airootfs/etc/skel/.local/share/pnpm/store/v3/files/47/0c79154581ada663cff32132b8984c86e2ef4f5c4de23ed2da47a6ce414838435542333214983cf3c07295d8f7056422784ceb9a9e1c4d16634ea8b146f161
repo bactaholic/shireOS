@@ -1,0 +1,10 @@
+/// <reference types="react" />
+export type AccessoryCallback = (props: Record<string, any>) => JSX.Element | null | Array<JSX.Element | null>;
+export type Accessory = {
+    callback: AccessoryCallback;
+    position?: number;
+};
+export declare const accessories: Map<String, Accessory>;
+export declare function addAccessory(identifier: string, callback: AccessoryCallback, position?: number): void;
+export declare function removeAccessory(identifier: string): void;
+export declare function _modifyAccessories(elements: JSX.Element[], props: Record<string, any>): JSX.Element[];

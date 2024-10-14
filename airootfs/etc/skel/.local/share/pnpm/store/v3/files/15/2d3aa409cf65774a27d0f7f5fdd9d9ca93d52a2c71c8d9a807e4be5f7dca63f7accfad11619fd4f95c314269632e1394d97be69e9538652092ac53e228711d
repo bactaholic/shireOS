@@ -1,0 +1,3 @@
+/// <reference types="react" />
+import "./spotifyStyles.css";
+export declare function Player(): JSX.Element | null;
