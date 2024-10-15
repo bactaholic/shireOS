@@ -1,1 +1,0 @@
-export declare function openReviewsModal(discordId: string, name: string): void;

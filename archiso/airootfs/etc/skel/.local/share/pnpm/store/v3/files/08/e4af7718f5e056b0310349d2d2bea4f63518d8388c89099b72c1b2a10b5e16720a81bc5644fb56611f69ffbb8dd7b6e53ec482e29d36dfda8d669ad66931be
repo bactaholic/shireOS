@@ -1,8 +1,0 @@
-/// <reference types="react" />
-/**
- * Renders code in a Discord codeblock
- */
-export declare function CodeBlock(props: {
-    content?: string;
-    lang: string;
-}): JSX.Element;

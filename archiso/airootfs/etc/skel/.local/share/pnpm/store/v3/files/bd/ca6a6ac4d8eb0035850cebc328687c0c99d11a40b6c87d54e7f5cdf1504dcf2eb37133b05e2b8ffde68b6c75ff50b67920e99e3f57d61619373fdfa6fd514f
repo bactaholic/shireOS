@@ -1,9 +1,0 @@
-/// <reference types="react" />
-import { ModalProps } from "../../utils/modal";
-import { Plugin } from "../../utils/types";
-interface PluginModalProps extends ModalProps {
-    plugin: Plugin;
-    onRestartNeeded(): void;
-}
-export default function PluginModal({ plugin, onRestartNeeded, onClose, transitionState }: PluginModalProps): JSX.Element;
-export {};

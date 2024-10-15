@@ -1,5 +1,0 @@
-/// <reference types="react" />
-import { Decoration } from "../../lib/api";
-export default function DecorationContextMenu({ decoration }: {
-    decoration: Decoration;
-}): JSX.Element;

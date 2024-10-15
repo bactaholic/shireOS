@@ -1,5 +1,0 @@
-/// <reference types="react" />
-import { ModalProps } from "../../utils/modal";
-export declare function TranslateModal({ rootProps }: {
-    rootProps: ModalProps;
-}): JSX.Element;

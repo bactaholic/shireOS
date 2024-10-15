@@ -1,7 +1,0 @@
-/// <reference types="react" />
-import "./styles.css";
-import { NotificationData } from "./Notifications";
-declare const _default: import("react").FunctionComponent<NotificationData & {
-    className?: string | undefined;
-}>;
-export default _default;

@@ -1,3 +1,0 @@
-2024-10-11 14:13:10.157 [info] Started local extension host with pid 85213.
-2024-10-11 14:13:13.643 [info] [perf] Render performance baseline is 24ms
-2024-10-11 16:27:09.859 [error] [text file model] handleSaveError(199) - exit - resulted in a save error: Error: Unable to write file '/etc/nixos/configuration.nix' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/etc/nixos/configuration.nix') file:///etc/nixos/configuration.nix

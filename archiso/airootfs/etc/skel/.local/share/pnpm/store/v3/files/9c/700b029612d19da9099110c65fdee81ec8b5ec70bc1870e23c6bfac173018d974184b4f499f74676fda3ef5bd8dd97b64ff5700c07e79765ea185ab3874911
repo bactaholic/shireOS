@@ -1,3 +1,0 @@
-/// <reference types="standalone-electron-types" />
-import { IpcMainInvokeEvent } from "electron";
-export declare function resolveRedirect(_: IpcMainInvokeEvent, url: string): Promise<string>;

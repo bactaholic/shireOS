@@ -1,3 +1,0 @@
-/// <reference types="react" />
-export declare function DecModal(props: any): JSX.Element;
-export declare function buildDecModal(msg: any): any;

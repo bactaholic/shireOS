@@ -1,5 +1,0 @@
-export interface SettingsStore<T = any> {
-    getSetting(): T;
-    updateSetting(value: T): void;
-    useSetting(): T;
-}

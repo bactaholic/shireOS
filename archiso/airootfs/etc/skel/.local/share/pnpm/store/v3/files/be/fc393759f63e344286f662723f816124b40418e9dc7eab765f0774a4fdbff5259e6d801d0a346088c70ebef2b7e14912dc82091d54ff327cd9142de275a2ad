@@ -1,4 +1,0 @@
-/// <reference types="react" />
-import { PluginOptionSelect } from "../../../utils/types";
-import { ISettingElementProps } from ".";
-export declare function SettingSelectComponent({ option, pluginSettings, definedSettings, onChange, onError, id }: ISettingElementProps<PluginOptionSelect>): JSX.Element;

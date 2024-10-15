@@ -1,6 +1,0 @@
-export declare const cl: (...args: (string | false | 0 | string[] | Record<string, unknown> | null | undefined)[]) => string;
-export interface TranslationValue {
-    src: string;
-    text: string;
-}
-export declare function translate(kind: "received" | "sent", text: string): Promise<TranslationValue>;

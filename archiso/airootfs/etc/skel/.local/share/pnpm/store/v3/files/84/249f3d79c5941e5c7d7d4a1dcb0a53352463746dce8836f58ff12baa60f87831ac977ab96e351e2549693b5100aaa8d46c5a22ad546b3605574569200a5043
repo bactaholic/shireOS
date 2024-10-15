@@ -1,4 +1,0 @@
-import * as t from "./types/settingsStores";
-export declare const TextAndImagesSettingsStores: Record<string, t.SettingsStore<any>>;
-export declare const StatusSettingsStores: Record<string, t.SettingsStore<any>>;
-export declare const UserSettingsActionCreators: any;
