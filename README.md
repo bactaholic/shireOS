@@ -7,11 +7,8 @@ Why is it shireOS and themed after Lord of the Rings? Because I wanted to.
 With that out of the way, roadmap...
 
     [] - add packages to default install
-
         [x] - nvidia drivers
-    
         [x] - rofi
-    
             [x] - rofi theme
         
         [x] - wayland
