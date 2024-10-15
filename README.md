@@ -18,10 +18,10 @@ With that out of the way, roadmap...
                 []  - add keymap popup
                 [x] - add wallpaper selector
                 [x] - polkit floating windowrules
-                []  - default wallpaper auto set on first boot
+                [x]  - default wallpaper auto set on first boot
                 []  - fix/change icons in waybar theme
         [x] - pywal
-        [x] - swww
+        [x] - hyprpaper
         [x] - waybar
             [x] - waybar theme
         [x] - greetd
@@ -37,6 +37,7 @@ With that out of the way, roadmap...
     [] - multilib support ootb
     [] - custom grub
     [] - gui installer
-        [] - customize gui installer
+        [x] - get it running
+        []  - customize gui installer
     [] - shireOS logo
     [] - boot logo/animation
