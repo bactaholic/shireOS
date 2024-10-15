@@ -18,8 +18,9 @@ With that out of the way, roadmap...
                 []  - add keymap popup
                 [x] - add wallpaper selector
                 [x] - polkit floating windowrules
-                [x]  - default wallpaper auto set on first boot
-                []  - fix/change icons in waybar theme
+                [x] - default wallpaper auto set on first boot
+                [x]  - fix/change icons in waybar theme
+                [x]  - dark mode gtk theme by default
         [x] - pywal
         [x] - hyprpaper
         [x] - waybar
@@ -28,11 +29,11 @@ With that out of the way, roadmap...
             [x] - tuigreet + config
         [x] - neofetch/fastfetch
             [x] - fetch config w/ One Ring
-        [] - polkit
+        [x] - polkit
         [] - hyprshot launcher
-        [] - cmatrix
-        [] - hyprlock
-           [] - hyprlock theme
+        [x] - cmatrix
+        [x] - hyprlock
+           [x] - hyprlock theme
     [] - kernel optimizations
     [] - multilib support ootb
     [] - custom grub
