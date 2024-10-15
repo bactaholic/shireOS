@@ -39,3 +39,4 @@ With that out of the way, roadmap...
     [] - gui installer
         [] - customize gui installer
     [] - shireOS logo
+    [] - boot logo/animation
