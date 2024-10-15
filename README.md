@@ -6,68 +6,68 @@ Why is it shireOS and themed after Lord of the Rings? Because I wanted to.
 
 With that out of the way, roadmap...
 
-[] - add packages to default install
+    [] - add packages to default install
 
-    [x] - nvidia drivers
+        [x] - nvidia drivers
     
-    [x] - rofi
+        [x] - rofi
     
-        [x] - rofi theme
+            [x] - rofi theme
         
-    [x] - wayland
+        [x] - wayland
     
-    [x] - hyprland
+        [x] - hyprland
     
-        [] - hyprland default .config dotfiles
+            [] - hyprland default .config dotfiles
         
-            []  - remove extra code/themes
+                []  - remove extra code/themes
+              
+                []  - clean up code formatting
             
-            []  - clean up code formatting
+                []  - add keymap popup
             
-            []  - add keymap popup
+                [x] - add wallpaper selector
             
-            [x] - add wallpaper selector
+                [x] - polkit floating windowrules
             
-            [x] - polkit floating windowrules
+                []  - default wallpaper auto set on first boot
             
-            []  - default wallpaper auto set on first boot
+                []  - fix/change icons in waybar theme
             
-            []  - fix/change icons in waybar theme
-            
-    [x] - pywal
+        [x] - pywal
     
-    [x] - swww
+        [x] - swww
     
-    [x] - waybar
+        [x] - waybar
     
-        [x] - waybar theme
+            [x] - waybar theme
         
-    [x] - greetd
+        [x] - greetd
     
-        [x] - tuigreet + config
+            [x] - tuigreet + config
         
-    [x] - neofetch/fastfetch
+        [x] - neofetch/fastfetch
     
-        [x] - fetch config w/ One Ring
+            [x] - fetch config w/ One Ring
+         
+        [] - polkit
+    
+        [] - hyprshot launcher
+    
+        [] - cmatrix
+    
+        [] - hyprlock
+    
+           [] - hyprlock theme
         
-    [] - polkit
-    
-    [] - hyprshot launcher
-    
-    [] - cmatrix
-    
-    [] - hyprlock
-    
-        [] - hyprlock theme
-        
-[] - kernel optimizations
+    [] - kernel optimizations
 
-[] - multilib support ootb
+    [] - multilib support ootb
 
-[] - custom grub
+    [] - custom grub
 
-[] - gui installer
+    [] - gui installer
 
-    [] - customize gui installer
+        [] - customize gui installer
     
-[] - shireOS logo
+    [] - shireOS logo
